@@ -1,0 +1,2 @@
+const daysEL=document.getElementById("days"),hoursEL=document.getElementById("hours"),minsEL=document.getElementById("mins"),secondsEL=document.getElementById("seconds"),newYears="31 December 2022",countdown=function(){const e=(new Date(newYears)-new Date)/1e3,n=Math.floor(e/3600/24),t=Math.floor(e/3600)%24,o=Math.floor(e/60)%60,s=Math.floor(e)%60;console.log(n,t,o,s),daysEL.innerHTML=n,hoursEL.innerHTML=`${t}`.padStart(2,0),minsEL.innerHTML=`${o}`.padStart(2,0),secondsEL.innerHTML=`${s}`.padStart(2,0)};setInterval(countdown,1e3);
+//# sourceMappingURL=index.c4c6a073.js.map
